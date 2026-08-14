@@ -300,7 +300,6 @@ a {
   overflow-x: auto;
 
   padding: 5px 15px 20px;
-  overflow-x: hidden;
 }
 
 .trending-list::-webkit-scrollbar {
