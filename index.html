@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Netflix</title>
+    <title>MovieFlix - Student Project</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,20 +15,24 @@
     ========================== -->
 
     <div class="offer-bar">
-      <p>🎁 New to Netflix? Try 30 days for Rs 0.</p>
+      <p>🎬 Welcome to MovieFlix — Your world of entertainment.</p>
     </div>
 
     <!-- =========================
          HEADER / HERO
     ========================== -->
 
+    <p class="demo-text" style="text-align: center">
+      Student Project — Movie Streaming Landing Page Demo
+    </p>
+
     <header class="hero">
       <!-- Navigation -->
 
       <nav class="navbar">
-        <a href="#" class="logo"> NETFLIX </a>
+        <a href="#" class="logo"> MOVIEFLIX </a>
 
-        <a href="#" class="sign-in"> Sign In </a>
+        <a href="#" class="sign-in"> Explore </a>
       </nav>
 
       <!-- Hero Content -->
@@ -36,20 +40,22 @@
       <div class="hero-content">
         <h1>Unlimited movies, TV shows, and more</h1>
 
-        <h2>Plans start at Rs 250. Cancel anytime.</h2>
+        <h2>Discover stories that take you somewhere new.</h2>
 
-        <p>Ready to watch? Enter your email to start your membership.</p>
+        <p>Explore movies, shows, and entertainment from anywhere.</p>
 
-        <form class="email-form">
-          <input type="email" placeholder="Email address" />
+        <form class="email-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email" />
 
           <button type="submit">
-            Try 30 Days for Rs 0
+            Explore Movies
             <span>›</span>
           </button>
         </form>
 
-        <p class="membership-text">New members only. Terms below.</p>
+        <p class="membership-text">
+          Student project demo — no real account or subscription required.
+        </p>
       </div>
     </header>
 
@@ -59,80 +65,76 @@
 
     <main>
       <!-- =========================
-             TRENDING NOW
-        ========================== -->
+           TRENDING NOW
+      ========================== -->
 
       <section class="trending">
         <div class="section-container">
-          <h2>Trending Now</h2>
+          <h2>Trending Movies</h2>
 
           <div class="trending-list">
             <!-- Movie 1 -->
 
             <div class="movie-card">
-              <span class="movie-number"> 1 </span>
-
-              <img src="./imges/1-pic.jpg" alt="Trending movie" />
+              <span class="movie-number">1</span>
+              <img src="./imges/1-pic.jpg" alt="Relentless movie poster" />
             </div>
 
             <!-- Movie 2 -->
 
             <div class="movie-card">
-              <span class="movie-number"> 2 </span>
-
-              <img src="./imges/2-pic.jpg" alt="Trending movie" />
+              <span class="movie-number">2</span>
+              <img src="./imges/2-pic.jpg" alt="Dark Horizon movie poster" />
             </div>
 
             <!-- Movie 3 -->
 
             <div class="movie-card">
-              <span class="movie-number"> 3 </span>
-
-              <img src="./imges/3-pic.jpg" alt="Trending movie" />
+              <span class="movie-number">3</span>
+              <img src="./imges/3-pic.jpg" alt="Last Mission movie poster" />
             </div>
 
             <!-- Movie 4 -->
 
             <div class="movie-card">
-              <span class="movie-number"> 4 </span>
-
-              <img src="./imges/4-pic.jpg" alt="Trending movie" />
+              <span class="movie-number">4</span>
+              <img src="./imges/4-pic.jpg" alt="Silent Chase movie poster" />
             </div>
 
             <!-- Movie 5 -->
 
             <div class="movie-card">
-              <span class="movie-number"> 5 </span>
-
-              <img src="./imges/5-pic-19.jpg" alt="Trending movie" />
+              <span class="movie-number">5</span>
+              <img src="./imges/5-pic-19.jpg" alt="Lost Empire movie poster" />
             </div>
 
             <!-- Movie 6 -->
 
             <div class="movie-card">
-              <span class="movie-number"> 6 </span>
-
-              <img src="./imges/6-pic.jpg" alt="Trending movie" />
+              <span class="movie-number">6</span>
+              <img src="./imges/6-pic.jpg" alt="Final Escape movie poster" />
             </div>
 
             <!-- Movie 7 -->
 
             <div class="movie-card">
-              <span class="movie-number"> 7 </span>
-
-              <img src="./imges/7-pic.jpg" alt="Trending movie" />
+              <span class="movie-number">7</span>
+              <img
+                src="./imges/7-pic.jpg"
+                alt="Beyond the Storm movie poster"
+              />
             </div>
           </div>
         </div>
       </section>
 
       <!-- =========================
-             REASONS TO JOIN
-        ========================== -->
+           REASONS TO JOIN
+      ========================== -->
 
       <section class="reasons">
         <div class="section-container">
-          <h2>More Reasons to Join</h2>
+          <h2>Why Explore MovieFlix?</h2>
 
           <div class="reason-container">
             <!-- Reason 1 -->
@@ -141,18 +143,19 @@
               <h3>Enjoy on your TV</h3>
 
               <p>
-                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-                Blu-ray players, and more.
+                Enjoy your favorite movies and shows on TVs, gaming consoles,
+                streaming devices, and more.
               </p>
             </article>
 
             <!-- Reason 2 -->
 
             <article class="reason-card">
-              <h3>Download your shows to watch offline</h3>
+              <h3>Save your favorites</h3>
 
               <p>
-                Save your favorites easily and always have something to watch.
+                Keep track of interesting movies and discover something exciting
+                whenever you want.
               </p>
             </article>
 
@@ -162,19 +165,19 @@
               <h3>Watch everywhere</h3>
 
               <p>
-                Stream unlimited movies and TV shows on your phone, tablet,
-                laptop, and TV.
+                Explore entertainment on your phone, tablet, laptop, or desktop
+                screen.
               </p>
             </article>
 
             <!-- Reason 4 -->
 
             <article class="reason-card">
-              <h3>Create profiles for kids</h3>
+              <h3>Family-friendly experience</h3>
 
               <p>
-                Send kids on adventures with their favorite characters in a
-                space made just for them — free with your membership.
+                Discover entertaining stories and create a comfortable viewing
+                experience for everyone.
               </p>
             </article>
           </div>
@@ -182,8 +185,8 @@
       </section>
 
       <!-- =========================
-             FAQ
-        ========================== -->
+           FAQ
+      ========================== -->
 
       <section class="faq">
         <div class="section-container">
@@ -192,52 +195,67 @@
           <!-- Question 1 -->
 
           <details class="faq-item">
-            <summary>What is Netflix?</summary>
+            <summary>What is MovieFlix?</summary>
 
-            <p>Netflix is a streaming service for movies and TV shows.</p>
+            <p>
+              MovieFlix is a student-made movie streaming landing page created
+              as a front-end project.
+            </p>
           </details>
 
           <!-- Question 2 -->
 
           <details class="faq-item">
-            <summary>How much does Netflix cost?</summary>
+            <summary>Is MovieFlix a real streaming service?</summary>
 
-            <p>Netflix offers different plans at different prices.</p>
+            <p>
+              No. This website is a front-end student project created for
+              learning and demonstration purposes.
+            </p>
           </details>
 
           <!-- Question 3 -->
 
           <details class="faq-item">
-            <summary>Where can I watch?</summary>
+            <summary>Where can I view this website?</summary>
 
-            <p>You can watch Netflix on many supported devices.</p>
+            <p>
+              The website is designed to work on desktop, laptop, tablet, and
+              mobile screens.
+            </p>
           </details>
 
           <!-- Question 4 -->
 
           <details class="faq-item">
-            <summary>How do I cancel?</summary>
+            <summary>Do I need an account?</summary>
 
-            <p>You can cancel your membership through your account settings.</p>
+            <p>
+              No. This demonstration website does not create real accounts or
+              collect real user information.
+            </p>
           </details>
 
           <!-- Question 5 -->
 
           <details class="faq-item">
-            <summary>What can I watch on Netflix?</summary>
+            <summary>What can I explore here?</summary>
 
-            <p>You can watch movies, TV shows, documentaries and more.</p>
+            <p>
+              You can explore movie posters, entertainment sections, responsive
+              layouts, and the FAQ section.
+            </p>
           </details>
 
           <!-- Bottom Email -->
 
           <div class="bottom-signup">
-            <p>Ready to watch? Enter your email to start your membership.</p>
+            <p>Ready to explore? Try the MovieFlix demo.</p>
 
-            <form class="email-form">
-              <input type="email" placeholder="Email address" />
+            <form class="email-form" onsubmit="return false;">
+              <input type="email" placeholder="Demo email address" />
 
-              <button type="submit">Try 30 Days for Rs 0</button>
+              <button type="submit">Explore Movies</button>
             </form>
           </div>
         </div>
@@ -260,43 +278,31 @@
           <!-- Column 1 -->
 
           <div class="footer-column">
-            <a href="#"> FAQ </a>
-
-            <a href="#"> Ways to Watch </a>
-
-            <a href="#"> Speed Test </a>
-
-            <a href="#"> Media Center </a>
-
-            <a href="#"> Cookie Preferences </a>
+            <a href="#">FAQ</a>
+            <a href="#">Movie Collection</a>
+            <a href="#">Explore</a>
+            <a href="#">Preferences</a>
+            <a href="#">Help</a>
           </div>
 
           <!-- Column 2 -->
 
           <div class="footer-column">
-            <a href="#"> Account </a>
-
-            <a href="#"> Privacy </a>
-
-            <a href="#"> Only on Netflix </a>
-
-            <a href="#"> Jobs </a>
-
-            <a href="#"> Contact Us </a>
+            <a href="#">About This Project</a>
+            <a href="#">Privacy</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Support</a>
+            <a href="#">Student Work</a>
           </div>
 
           <!-- Column 3 -->
 
           <div class="footer-column">
-            <a href="#"> Investor Relations </a>
-
-            <a href="#"> Corporate Information </a>
-
-            <a href="#"> Help Center </a>
-
-            <a href="#"> Terms of Use </a>
-
-            <a href="#"> Legal Notices </a>
+            <a href="#">Information</a>
+            <a href="#">Project Details</a>
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Legal Notices</a>
           </div>
         </div>
 
@@ -311,7 +317,7 @@
 
         <!-- Country -->
 
-        <p class="country">Netflix Pakistan</p>
+        <p class="country">MovieFlix Pakistan</p>
       </div>
     </footer>
   </body>
