@@ -1,0 +1,925 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  overflow-x: hidden;
+}
+
+/* =========================
+   COMMON
+========================= */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+/* =========================
+   TOP OFFER BAR
+========================= */
+
+.offer-bar {
+  width: 100%;
+
+  min-height: 48px;
+
+  background: linear-gradient(90deg, #8e2de2, #e91e63, #ff0000);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px;
+
+  text-align: center;
+}
+
+.offer-bar p {
+  font-size: 16px;
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+
+  min-height: 650px;
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("./imges/here-pic.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-bottom: 8px solid #222;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  min-height: 90px;
+
+  padding: 0 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #e50914;
+
+  font-size: 38px;
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+
+  text-shadow: 0 0 3px #000;
+}
+
+.sign-in {
+  background-color: #e50914;
+
+  padding: 9px 18px;
+
+  border-radius: 4px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.sign-in:hover {
+  background-color: #b20710;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  width: 850px;
+
+  max-width: 90%;
+
+  min-height: 500px;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.hero-content h1 {
+  max-width: 750px;
+
+  font-size: 48px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.hero-content h2 {
+  font-size: 22px;
+
+  line-height: 1.4;
+
+  margin-bottom: 20px;
+}
+
+.hero-content > p {
+  font-size: 17px;
+
+  line-height: 1.5;
+
+  margin-bottom: 20px;
+}
+
+/* =========================
+   EMAIL FORM
+========================= */
+
+.email-form {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.email-form input {
+  width: 420px;
+
+  min-height: 58px;
+
+  padding: 0 18px;
+
+  background-color: rgba(255, 255, 255, 0.95);
+
+  color: #000;
+
+  border: 1px solid #aaa;
+
+  border-radius: 4px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.email-form input:focus {
+  border: 2px solid #fff;
+}
+
+.email-form button {
+  min-height: 58px;
+
+  padding: 0 25px;
+
+  background-color: #e50914;
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 4px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.email-form button:hover {
+  background-color: #b20710;
+}
+
+.email-form button span {
+  font-size: 25px;
+
+  margin-left: 8px;
+}
+
+.membership-text {
+  color: #aaa;
+
+  font-size: 14px !important;
+
+  margin-top: 10px;
+}
+
+/* =========================
+   TRENDING
+========================= */
+
+.trending {
+  padding: 55px 30px;
+
+  border-bottom: 8px solid #222;
+}
+
+.trending h2 {
+  font-size: 26px;
+
+  margin-bottom: 25px;
+}
+
+/* =========================
+   TRENDING LIST
+========================= */
+
+.trending-list {
+  display: flex;
+
+  gap: 25px;
+
+  overflow-x: auto;
+
+  padding: 5px 15px 20px;
+  overflow-x: hidden;
+}
+
+.trending-list::-webkit-scrollbar {
+  height: 7px;
+}
+
+.trending-list::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.trending-list::-webkit-scrollbar-thumb {
+  background: #555;
+
+  border-radius: 10px;
+}
+
+.movie-card {
+  position: relative;
+
+  flex: 0 0 145px;
+
+  height: 205px;
+
+  border-radius: 5px;
+
+  overflow: visible;
+
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 5px;
+}
+
+.movie-number {
+  position: absolute;
+
+  left: -18px;
+
+  bottom: -8px;
+
+  z-index: 2;
+
+  color: #000;
+
+  font-size: 55px;
+
+  font-weight: 900;
+
+  line-height: 1;
+
+  -webkit-text-stroke: 2px #fff;
+
+  text-shadow:
+    2px 2px 0 #fff,
+    -1px -1px 0 #fff;
+}
+
+/* =========================
+   REASONS
+========================= */
+
+.reasons {
+  padding: 55px 30px;
+
+  border-bottom: 8px solid #222;
+}
+
+.reasons h2 {
+  font-size: 27px;
+
+  margin-bottom: 25px;
+}
+
+.reason-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 8px;
+}
+
+.reason-card {
+  min-height: 250px;
+
+  padding: 28px 24px;
+
+  border-radius: 22px;
+
+  background: linear-gradient(145deg, #101050, #07074a);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  transition: 0.3s;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+}
+
+.reason-card h3 {
+  font-size: 19px;
+
+  line-height: 1.25;
+}
+
+.reason-card p {
+  color: #ddd;
+
+  font-size: 15px;
+
+  line-height: 1.4;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq {
+  padding: 55px 30px;
+
+  border-bottom: 8px solid #222;
+}
+
+.faq h2 {
+  font-size: 27px;
+
+  margin-bottom: 25px;
+}
+
+.faq-item {
+  width: 100%;
+
+  margin-bottom: 16px;
+
+  background-color: #2d2d2d;
+
+  transition: 0.3s;
+}
+
+.faq-item:hover {
+  background-color: #414141;
+}
+
+.faq-item summary {
+  min-height: 72px;
+
+  padding: 20px 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  cursor: pointer;
+
+  list-style-position: inside;
+
+  font-size: 18px;
+}
+
+.faq-item p {
+  padding: 0 24px 22px;
+
+  color: #ddd;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   BOTTOM SIGNUP
+========================= */
+
+.bottom-signup {
+  padding-top: 25px;
+
+  text-align: center;
+}
+
+.bottom-signup p {
+  margin-bottom: 15px;
+
+  font-size: 16px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 55px 30px;
+
+  background-color: #000;
+}
+
+.footer-container {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.contact {
+  margin-bottom: 35px;
+}
+
+.contact a {
+  color: #aaa;
+
+  text-decoration: underline;
+
+  font-size: 18px;
+}
+
+/* =========================
+   FOOTER LINKS
+========================= */
+
+.footer-links {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px 80px;
+
+  margin-bottom: 45px;
+}
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.footer-column a {
+  color: #aaa;
+
+  text-decoration: underline;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+/* =========================
+   LANGUAGE
+========================= */
+
+.language button {
+  padding: 10px 18px;
+
+  background-color: #000;
+
+  color: #fff;
+
+  border: 1px solid #777;
+
+  border-radius: 3px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.language span {
+  margin-left: 8px;
+}
+
+.country {
+  margin-top: 35px;
+
+  color: #aaa;
+
+  font-size: 14px;
+}
+
+/* ==================================================
+   RESPONSIVE
+   TABLET / SMALL LAPTOP
+================================================== */
+
+@media (max-width: 1024px) {
+  .section-container {
+    max-width: 900px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .reason-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+  .reason-card {
+    min-height: 230px;
+  }
+
+  .footer-links {
+    gap: 20px 40px;
+  }
+}
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 768px) {
+  .offer-bar {
+    min-height: 45px;
+  }
+
+  .offer-bar p {
+    font-size: 14px;
+  }
+
+  .navbar {
+    min-height: 75px;
+
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .sign-in {
+    padding: 8px 14px;
+
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-content {
+    min-height: 500px;
+
+    max-width: 92%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content h2 {
+    font-size: 19px;
+  }
+
+  .hero-content > p {
+    font-size: 15px;
+  }
+
+  .email-form {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .email-form input {
+    width: 100%;
+  }
+
+  .email-form button {
+    width: auto;
+
+    min-width: 230px;
+  }
+
+  .trending {
+    padding: 45px 20px;
+  }
+
+  .reasons {
+    padding: 45px 20px;
+  }
+
+  .faq {
+    padding: 45px 20px;
+  }
+
+  .footer {
+    padding: 45px 20px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+  }
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+  .offer-bar {
+    padding: 9px 15px;
+  }
+
+  .offer-bar p {
+    font-size: 13px;
+  }
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 25px;
+
+    letter-spacing: -1px;
+  }
+
+  .sign-in {
+    padding: 7px 12px;
+
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 580px;
+
+    background-position: center;
+  }
+
+  .hero-content {
+    min-height: 490px;
+
+    padding: 20px 5px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+
+    line-height: 1.15;
+  }
+
+  .hero-content h2 {
+    font-size: 17px;
+  }
+
+  .hero-content > p {
+    font-size: 14px;
+  }
+
+  .email-form {
+    gap: 10px;
+  }
+
+  .email-form input {
+    min-height: 52px;
+
+    font-size: 15px;
+  }
+
+  .email-form button {
+    min-height: 52px;
+
+    width: 100%;
+
+    font-size: 16px;
+  }
+
+  .trending {
+    padding: 40px 15px;
+  }
+
+  .trending h2 {
+    font-size: 23px;
+  }
+
+  .trending-list {
+    gap: 20px;
+
+    padding-left: 18px;
+  }
+
+  .movie-card {
+    flex-basis: 125px;
+
+    height: 180px;
+  }
+
+  .movie-number {
+    font-size: 45px;
+
+    left: -15px;
+  }
+
+  .reasons {
+    padding: 40px 15px;
+  }
+
+  .reasons h2 {
+    font-size: 23px;
+  }
+
+  .reason-container {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .reason-card {
+    min-height: 220px;
+
+    padding: 25px 22px;
+
+    border-radius: 18px;
+  }
+
+  .faq {
+    padding: 40px 15px;
+  }
+
+  .faq h2 {
+    font-size: 23px;
+  }
+
+  .faq-item {
+    margin-bottom: 10px;
+  }
+
+  .faq-item summary {
+    min-height: 65px;
+
+    padding: 18px;
+
+    font-size: 16px;
+  }
+
+  .faq-item p {
+    padding: 0 18px 18px;
+
+    font-size: 14px;
+  }
+
+  .bottom-signup {
+    padding-top: 20px;
+  }
+
+  .footer {
+    padding: 40px 15px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .footer-column {
+    gap: 15px;
+  }
+}
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media (max-width: 400px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-content h2 {
+    font-size: 16px;
+  }
+
+  .hero-content > p {
+    font-size: 13px;
+  }
+
+  .movie-card {
+    flex-basis: 110px;
+
+    height: 160px;
+  }
+
+  .movie-number {
+    font-size: 40px;
+  }
+
+  .reason-card h3 {
+    font-size: 18px;
+  }
+
+  .reason-card p {
+    font-size: 14px;
+  }
+}
